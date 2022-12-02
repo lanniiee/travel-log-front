@@ -42,9 +42,9 @@
         margin: 0.5rem 10vw;
         &--home, &--destinations, &--reviews, &--upload {
             text-decoration: none;
-            font-family: $font-bebas;
-            font-weight: 100;
+            font-family: $font-poiret;
             color: $color-dark-beige;
+            font-size: 1.2rem;
             z-index: 9;
         }
 
