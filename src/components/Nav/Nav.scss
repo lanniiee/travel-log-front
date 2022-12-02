@@ -1,0 +1,52 @@
+@use "../../styles/typography.scss" as *;
+@use "../../styles/variables" as *;
+
+
+.nav {
+    width: 100vw;
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px dotted $color-taupe;
+
+    .script {
+        position: absolute;
+        font-family: $font-delafiel;
+        font-size: 7rem;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        font-weight: 100;
+        color: $color-dark-beige;
+    }
+    &__heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        margin: 2rem 0 0 0 ;
+        color: $color-grey;
+        &--title {
+            display: flex;
+            flex-direction: row;
+            padding: 0 7rem;
+            font-family: $font-ubuntu;
+            font-size: 4rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 10vw;
+        font-family: $font-bebas;
+        font-weight: 100;
+        color: $color-dark-beige;
+
+        hr {
+            background-color: $color-dark-beige;
+            border: none;
+            width: 2px;
+        }
+    }
+}
