@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background-image:
+    linear-gradient(to bottom, rgba(171, 78, 160, 0.454), white),
+    url('https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    height: 35vh;
+    z-index: -5;
+    
+    &__cloud {
+        width: 40rem;
+        position: absolute;
+    }
+
+    &__overlay {
+        background-image: linear-gradient(to bottom, rgba(181, 113, 173, 0.225), white);
+        background-size: cover;
+        height: 80vh;
+    }
+
+    .cloud1 {
+        right: -5rem;
+        top: 20vh;
+        opacity: 80%;
+    }
+
+    .cloud2 {
+        left: 2rem;
+        top: 19vh;
+        opacity: 70%;
+    }
+
+    .cloud3 {
+        left: -15rem;
+        top: 20vh;
+        opacity: 80%;
+    }
+
+    .cloud4 {
+        right: -12rem;
+        top: 8vh;
+        opacity: 80%;
+    }
+
+    .cloud5 {
+        left: -25rem;
+        top: 10vh;
+        opacity: 70%;
+    }
+}
