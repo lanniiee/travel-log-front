@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 2px dotted $color-taupe;
+    position: sticky;
 
     .script {
         position: absolute;
