@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Nav.scss";
 
 const Nav = () => {
@@ -10,13 +11,22 @@ const Nav = () => {
             </div>
 
             <div className="nav__links">
-                <h4 className="nav__link">Home</h4>
+                <NavLink to={"/"} className="nav__links--home">
+                                    <h4 className="nav__link">Home</h4>
+                </NavLink>
                 <hr />
-                <h4 className="nav__link">Destinations</h4>
+                <NavLink to={"/destinations"} className="nav__links--destinations">
+                    <h4 className="nav__link">Destinations</h4>
+                </NavLink>
                 <hr />
-                <h4 className="nav__link">Reviews</h4>
+                <NavLink to={"/reviews"} className="nav__links--reviews">
+                    <h4 className="nav__link">Reviews</h4>
+                </NavLink>
                 <hr />
-                <h4 className="nav__link">Upload Reviews</h4>
+                <NavLink to={"/uploadreviews"} className="nav__links--upload">
+                    <h4 className="nav__link">Upload Reviews</h4>
+                </NavLink>
+
             </div>
         </div>
     )
