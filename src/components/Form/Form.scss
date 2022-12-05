@@ -1,0 +1,48 @@
+@use "../../styles/typography.scss" as *;
+@use "../../styles/variables" as *;
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    &__title {
+        font-family: $font-poiret;
+        padding-bottom: 2rem;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+        width: 90vw;
+    }
+    &__input {
+        font-family: $font-ubuntu;
+        margin: 0.5rem 0;
+        width: 90vw;
+        height: 1.5rem;
+        padding: 5px;
+        border: 1px solid $color-dark-beige;
+        border-radius: 5px;
+        font-size: 0.9rem;
+    }
+    .comment {
+        height: 4rem;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        resize: none;
+    }
+    &__button {
+        height: 2rem;
+        width: 10rem;
+        background-color: $color-dark-beige;
+        border-radius: 5px;
+        border: none;
+        color: $color-white;
+        font-family: $font-ubuntu;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}

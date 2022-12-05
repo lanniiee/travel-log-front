@@ -1,7 +1,7 @@
 import "./Card.scss";
 
-const Card = (props) => {
-    const {} = props;
+const Card = () => {
+
 
     return (
         <div className="card">

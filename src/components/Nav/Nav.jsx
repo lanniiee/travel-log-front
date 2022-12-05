@@ -23,8 +23,8 @@ const Nav = () => {
                     <h4 className="nav__link">Reviews</h4>
                 </NavLink>
                 <hr />
-                <NavLink to={"/uploadreviews"} className="nav__links--upload">
-                    <h4 className="nav__link">Upload Reviews</h4>
+                <NavLink to={"/upload/destination"} className="nav__links--upload">
+                    <h4 className="nav__link">Upload Destination</h4>
                 </NavLink>
 
             </div>
