@@ -7,4 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    &__card {
+        text-decoration: none;
+    }
 }

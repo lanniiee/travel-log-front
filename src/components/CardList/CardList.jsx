@@ -1,18 +1,18 @@
+import { Link } from "react-router-dom";
 import Card from "../Card/Card";
 import "./CardList.scss";
 
-const CardList = () => {
+const CardList = ({destinations}) => {
 
+    console.log(destinations);
 
     return (
         <div className="cardList">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {destinations.map(destination => (
+                <Link key={destination.id} to={`/destination/${destination.id}`} className="cardList__card">
+                    <Card destination={destination} />
+                </Link>
+            ))}
         </div>
     )
 
