@@ -1,2 +1,42 @@
 @use "../../styles/typography.scss" as *;
 @use "../../styles/variables" as *;
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        &--title {
+            font-family: $font-ubuntu;
+            font-size: 3rem;
+            color: $color-dark-grey;
+        }
+        &--subheading {
+            font-family: $font-allison;
+            font-size: 1.8rem;
+            color: rgb(24, 24, 24);
+        }
+    }
+    &__divider {
+        &--top {
+            width: 65vw;
+            height: 2px;
+            background-color: $color-light-beige;
+            border: none;
+        }
+        &--bottom {
+            width: 80vw;
+            height: 2px;
+            background-color: $color-light-beige;
+            border: none;
+        }
+
+    }
+}
