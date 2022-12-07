@@ -12,15 +12,11 @@ const Nav = () => {
 
             <div className="nav__links">
                 <NavLink to={"/"} className="nav__links--home">
-                                    <h4 className="nav__link">Home</h4>
+                    <h4 className="nav__link">Home</h4>
                 </NavLink>
                 <hr />
                 <NavLink to={"/destinations"} className="nav__links--destinations">
                     <h4 className="nav__link">Destinations</h4>
-                </NavLink>
-                <hr />
-                <NavLink to={"/reviews"} className="nav__links--reviews">
-                    <h4 className="nav__link">Reviews</h4>
                 </NavLink>
                 <hr />
                 <NavLink to={"/upload/destination"} className="nav__links--upload">

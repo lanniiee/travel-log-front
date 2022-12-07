@@ -3,5 +3,112 @@
 
 
 .destination {
-    width: 80vw;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    &__title {
+        font-family: $font-allison;
+        font-weight: 500;
+        color: $color-dark-beige;
+        font-size: 6rem;
+    }
+    &__image {
+        width: 30rem;
+        margin-bottom: 1rem;
+    }
+    &__text {
+        font-family: $font-ubuntu;
+        font-size: 1rem;
+        color: $color-dark-grey;
+    }
+    &__comment {
+        width: 30rem;
+        margin: 2rem 0;
+        &--comment {
+            font-family: $font-ubuntu;
+            font-weight: 400;
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: $color-dark-beige;
+            border: 1px dotted $color-taupe;
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+        &--title {
+            font-family: $font-ubuntu;
+            color: $color-dark-grey;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        &--text {
+            font-family: $font-ubuntu;
+            text-align: left;
+            font-size: 0.7rem;
+            color: $color-grey;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .destination {
+        width: 100vw;
+        &__info-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40rem;
+            height: 24rem;
+        }
+        &__title {
+            font-family: $font-allison;
+            font-weight: 500;
+            color: $color-dark-beige;
+            font-size: 6rem;
+        }
+        &__image {
+            width: 40rem;
+            height: 24rem;
+            margin-right: 1rem;
+            margin-top: 1rem;
+            border: 2px solid $color-dark-beige;
+        }
+        &__text {
+            font-family: $font-ubuntu;
+            font-size: 1rem;
+            color: $color-dark-grey;
+            text-align: left;
+        }
+        &__comment {
+            width: 40rem;
+            height: 11rem;
+            &--comment {
+                font-family: $font-ubuntu;
+                font-weight: 400;
+                font-size: 0.9rem;
+                color: $color-dark-beige;
+                border: 1px dotted $color-taupe;
+                height: 8rem;
+            }
+            &--title {
+                font-family: $font-ubuntu;
+                color: $color-dark-grey;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            &--text {
+                font-family: $font-ubuntu;
+                text-align: end;
+                font-size: 0.8rem;
+                color: $color-grey;
+            }
+        }
+    }
 }
