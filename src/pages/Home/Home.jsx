@@ -13,6 +13,7 @@ const Home = ({destination}) => {
                 <hr className="home__divider--bottom"/>
             </div>
             <Card destination={destination} size="big" />
+            <img className="gif" src="https://media.tenor.com/i-f1Eqn-4A8AAAAi/cute-bear.gif" alt="gif" />
         </div>
     )
 }
