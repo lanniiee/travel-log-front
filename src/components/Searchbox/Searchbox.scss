@@ -1,0 +1,14 @@
+@use "../../styles/typography.scss" as *;
+@use "../../styles/variables" as *;
+
+.searchbox {
+    &__input {
+        padding: 0.5rem;
+        width: 13rem;
+        height: 1.5rem;
+        border: 1px solid $color-taupe;
+        border-radius: 5px;
+        margin-bottom: -2rem;
+    }
+}
+
