@@ -23,14 +23,14 @@ const UploadDestination = () => {
     };
 
     const defaultFormState = { 
-        "name": "", 
-        "location": "", 
-        "image": "", 
-        "cost": "", 
-        "visit": "", 
-        "dateFrom": "", 
-        "dateTo": "", 
-        "comment": "" 
+        name: "", 
+        location: "", 
+        image: "", 
+        cost: "", 
+        visit: "", 
+        dateFrom: "", 
+        dateTo: "", 
+        comment: "" 
     }
 
 
