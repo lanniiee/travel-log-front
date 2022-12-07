@@ -4,10 +4,12 @@ import "./UploadDestination.scss";
 const UploadDestination = () => {
 
     const handleSubmitForm = async destination => {
-        const res = await fetch( "http://localhost:8080/destination", 
+        console.log(destination)
+        console.log(JSON.stringify(destination))
+        const res = await fetch( "http://localhost:8080/destination",
         {
             method: 'POST',
-            header: {
+            headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
@@ -21,14 +23,14 @@ const UploadDestination = () => {
     };
 
     const defaultFormState = { 
-        name: "", 
-        location: "", 
-        image: "", 
-        cost: "", 
-        visit: "", 
-        dateFrom: "", 
-        dateTo: "", 
-        comment: "" 
+        "name": "", 
+        "location": "", 
+        "image": "", 
+        "cost": "", 
+        "visit": "", 
+        "dateFrom": "", 
+        "dateTo": "", 
+        "comment": "" 
     }
 
 
