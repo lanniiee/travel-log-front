@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import "./Destination.scss";
 
 const Destination = () => {
@@ -19,25 +19,31 @@ const Destination = () => {
         getChosenDestinationById(id);
     }, [id]);
 
-    const handleDeleteDestination = async () => {
-        const res = await fetch(`http://localhost:8080/destination/destination.id`, 
-        {
-            method: 'DELETE',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        });
-        if(res.ok) {
-            alert("Destination review has been deleted");
-            navigate("/");
-        } else {
-            alert("Something went wrong.")
-        }
-    }
+
+    // const handleDeleteDestination = async () => {
+    //     const res = await fetch(`http://localhost:8080/destination/destination.id`, 
+    //     {
+    //         method: 'DELETE',
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json'
+    //         }
+    //     });
+    //     if(res.ok) {
+    //         alert("Destination review has been deleted");
+    //         navigate("/");
+    //     } else {
+    //         alert("Something went wrong.")
+    //     }
+    // }
 
     return (
         <div className={"destination"}>
+            <NavLink to="/destinations">
+                <div className="back" >
+                    {"<"}
+                </div>
+            </NavLink>
             <h1 className="destination__title">{chosenDestination.location}</h1>
             <div className="destination__info-container">
                 <div className="destination__image-container">

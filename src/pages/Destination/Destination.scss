@@ -57,6 +57,16 @@
     }
 }
 
+.back {
+    position: absolute;
+    top: 12rem;
+    left: 2rem;
+    font-size: 2.5rem;
+    font-family: $font-manrope;
+    color: $color-taupe;
+    opacity: 60%;
+}
+
 @media screen and (min-width: 1000px) {
     .destination {
         width: 100vw;
