@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import "./Destination.scss";
 
 const Destination = () => {
 
     const {id} = useParams();
-    const {navigate} = useNavigate();
     const [chosenDestination, setChosenDestination] = useState({});
 
     const getChosenDestinationById = async id => {
