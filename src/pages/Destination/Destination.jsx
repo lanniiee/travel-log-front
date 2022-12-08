@@ -8,6 +8,7 @@ const Destination = () => {
 
     const {id} = useParams();
     const [chosenDestination, setChosenDestination] = useState({});
+    const [pinEntered, setPinEnter] = useState("");
 
     const getChosenDestinationById = async id => {
         const res = await fetch(`http://localhost:8080/destination/${id}`)
@@ -19,21 +20,30 @@ const Destination = () => {
         getChosenDestinationById(id);
     }, [id]);
 
+    const handleInput = (e) => {
+        setPinEnter(e.target.value);
+    }
+
+    const pin = "2022!"
 
     const handleDeleteDestination = async () => {
-        const res = await fetch(`http://localhost:8080/destination/${id}`, 
-        {
-            method: 'DELETE',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+        if (pinEntered === pin) {
+            const res = await fetch(`http://localhost:8080/destination/${id}`, 
+            {
+                method: 'DELETE',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
+            if(res.ok) {
+                alert("Destination review has been deleted. Refresh the page");
+                navigate("/destinations");
+            } else {
+                alert("Something went wrong.")
             }
-        });
-        if(res.ok) {
-            alert("Destination review has been deleted. Refresh the page");
-            navigate("/destinations");
         } else {
-            alert("Something went wrong.")
+            alert("Enter the correct pin")
         }
     }
 
@@ -45,6 +55,16 @@ const Destination = () => {
                     {"<"}
                 </div>
             </NavLink>
+            <div className="destination__delete-container">
+                <input 
+                    className="pin" 
+                    type="text" 
+                    placeholder="pin"
+                    onInput={handleInput}
+                    value={pinEntered}/>
+                <button className="destination__comment--button delete" onClick={handleDeleteDestination}>Delete</button>
+            </div>
+            
             <h1 className="destination__title">{chosenDestination.location}</h1>
             <div className="destination__info-container">
                 <div className="destination__image-container">
@@ -64,7 +84,7 @@ const Destination = () => {
                         </p>
                         <p className="destination__comment--text">Created By: {chosenDestination.name}</p>
                         <p className="destination__comment--text">Created On: {chosenDestination.dateCreated}</p>
-                        <button className="destination__comment--button" onClick={handleDeleteDestination}>Delete</button>
+                        
                     </div>
                 </div>
             </div>
