@@ -7,6 +7,7 @@ import Destination from './pages/Destination/Destination';
 import UploadDestination from './pages/UploadDestination/UploadDestination';
 import {getAllDestinations, getRandomDestination} from "./utils/apiUtils";
 import {useState, useEffect} from "react";
+import UpdateDestination from './pages/UpdateDestination/UpdateDestination';
 
 function App() {
   const [allDestinations, setAllDestinations] = useState([]);
@@ -39,6 +40,7 @@ function App() {
           <Route path="/destinations" element={<Destinations allDestinations={allDestinations} />} />
           <Route path='/upload/destination' element={<UploadDestination/>} />
           <Route path='/destination/:id' element={<Destination/>} />
+          <Route path='/destination/update/:id' element={<UpdateDestination/>} />
         </Routes>
     </div>
   );

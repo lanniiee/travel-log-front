@@ -10,18 +10,15 @@ const Form = ({defaultFormState, handleSubmitForm, formTitle }) => {
 
         if (Object.values(destination).some(value => !value)) {
             alert("Unable to upload your destination. All fields need to be completed.")
-            return;
         }
 
         handleSubmitForm(destination);
-    }
+    } 
 
 
-    return (
-        <div className="form-container">
-            <h1 className="form-container__title">{formTitle}</h1>
-            <form className="form-container__form" onSubmit={handleValidation}>
-            <input 
+    const upload = (
+        <form className="form-container__form" onSubmit={handleValidation}>
+                <input 
                     className="form-container__input"
                     type="text" 
                     placeholder="Your Name..."
@@ -79,6 +76,12 @@ const Form = ({defaultFormState, handleSubmitForm, formTitle }) => {
                 />
                 <button className="form-container__button" type="submit">Submit your review</button>
             </form>
+    )
+
+    return (
+        <div className="form-container">
+            <h1 className="form-container__title">{formTitle}</h1>
+            {upload}
         </div>
     )
 

@@ -1,0 +1,26 @@
+@use "../../styles/typography.scss" as *;
+@use "../../styles/variables" as *;
+
+.upload {
+    width: 100vw;
+    &__title {
+        font-family: $font-allison;
+        font-weight: 500;
+        color: $color-dark-beige;
+        font-size: 4rem;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: $color-taupe;
+        text-decoration-style: double;
+    }
+    &__image {
+        width: 30rem;
+        margin-bottom: 1rem;
+        border: 1px solid $color-dark-beige;
+    }
+    &__text {
+        font-family: $font-ubuntu;
+        font-size: 1rem;
+        color: $color-dark-grey;
+    }
+}

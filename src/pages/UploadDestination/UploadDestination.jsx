@@ -4,9 +4,7 @@ import "./UploadDestination.scss";
 const UploadDestination = () => {
 
     const handleSubmitForm = async destination => {
-        console.log(destination)
-        console.log(JSON.stringify(destination))
-        const res = await fetch( "http://localhost:8080/destination",
+        const res = await fetch( `http://localhost:8080/destination/`,
         {
             method: 'POST',
             headers: {
@@ -36,7 +34,7 @@ const UploadDestination = () => {
 
     return (
         <div className="uploadDestination">
-            <Form defaultFormState={defaultFormState} handleSubmitForm={handleSubmitForm} formTitle="Upload Your Destination Travel"/>
+            <Form defaultFormState={defaultFormState} handleSubmitForm={handleSubmitForm} formTitle="Upload Your Destination Travel" page="upload" />
         </div>
     )
 }
