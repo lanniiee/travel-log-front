@@ -10,7 +10,6 @@
     justify-content: space-between;
     border-bottom: 2px dotted $color-taupe;
     position: sticky;
-
     .script {
         position: absolute;
         font-family: $font-delafiel;
@@ -52,6 +51,61 @@
             background-color: $color-dark-beige;
             border: none;
             width: 2px;
+        }
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 1000px) {
+    .nav {
+        width: 115vw;
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 2px dotted $color-taupe;
+        position: sticky;
+        .script {
+            position: absolute;
+            font-family: $font-delafiel;
+            font-size: 5rem;
+            padding-top: 2rem;
+            padding-left: 1rem;
+            font-weight: 100;
+            color: $color-dark-beige;
+        }
+        &__heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            margin: 1rem 0 0 0 ;
+            color: $color-grey;
+            &--title {
+                display: flex;
+                flex-direction: row;
+                padding: 0 5rem;
+                font-family: $font-ubuntu;
+                font-size: 3rem;
+            }
+        }
+    
+        &__links {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 10vw;
+            &--home, &--destinations, &--reviews, &--upload {
+                text-decoration: none;
+                font-family: $font-poiret;
+                color: $color-dark-beige;
+                font-size: 1rem;
+                z-index: 9;
+            }
+    
+            hr {
+                background-color: $color-dark-beige;
+                border: none;
+                width: 1px;
+            }
         }
     }
 }

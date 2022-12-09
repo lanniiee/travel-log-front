@@ -24,3 +24,29 @@
         color: $color-dark-grey;
     }
 }
+
+@media screen and (min-width: 380px) and (max-width: 1000px) {
+    .upload {
+        width: 115vw;
+        &__title {
+            font-family: $font-allison;
+            font-weight: 500;
+            color: $color-dark-beige;
+            font-size: 4rem;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-decoration-color: $color-taupe;
+            text-decoration-style: double;
+        }
+        &__image {
+            width: 25rem;
+            margin-bottom: 1rem;
+            border: 1px solid $color-dark-beige;
+        }
+        &__text {
+            font-family: $font-ubuntu;
+            font-size: 1rem;
+            color: $color-dark-grey;
+        }
+    }
+}

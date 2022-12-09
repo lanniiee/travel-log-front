@@ -3,25 +3,25 @@
 
 
 .destination {
-    width: 100vw;
+    width: 115vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-top: 2rem;
+    margin-top: 3rem;
     &__title {
         font-family: $font-allison;
         font-weight: 500;
         color: $color-dark-beige;
-        font-size: 6rem;
+        font-size: 4rem;
         text-decoration: underline;
         text-decoration-thickness: 1px;
         text-decoration-color: $color-taupe;
         text-decoration-style: double;
     }
     &__image {
-        width: 30rem;
+        width: 23rem;
         margin-bottom: 1rem;
         border: 1px solid $color-dark-beige;
     }
@@ -31,7 +31,7 @@
         color: $color-dark-grey;
     }
     &__comment {
-        width: 30rem;
+        width: 23rem;
         margin: 2rem 0;
         display: flex;
         flex-direction: column;
@@ -51,7 +51,7 @@
             border-radius: 5px;
             color: $color-white;
             margin-top: 0.5rem;
-            margin-left: 21rem;
+            margin-left: 13rem;
         }
         &--comment {
             font-family: $font-ubuntu;
@@ -80,7 +80,7 @@
 
 .back {
     position: absolute;
-    top: 12rem;
+    top: 8.5rem;
     left: 2rem;
     font-size: 2.5rem;
     font-family: $font-manrope;
@@ -90,8 +90,8 @@
 
 .delete {
         position: absolute;
-        top: 12.5rem;
-        right: 2rem;
+        top: 9rem;
+        right: -1rem;
         opacity: 60%;
         width: 5rem;
     }
@@ -99,8 +99,8 @@
 
 .pin {
     position: absolute;
-    top: 13rem;
-    right: 8rem;
+    top: 9.5rem;
+    right: 4.5rem;
     opacity: 60%;
     width: 5rem;
     height: 1.5rem;
@@ -177,5 +177,35 @@
                 color: $color-grey;
             }
         }
+    }
+    .back {
+        position: absolute;
+        top: 12rem;
+        left: 2rem;
+        font-size: 2.5rem;
+        font-family: $font-manrope;
+        color: $color-taupe;
+        opacity: 60%;
+    }
+    
+    .delete {
+            position: absolute;
+            top: 12.5rem;
+            right: 2rem;
+            opacity: 60%;
+            width: 5rem;
+        }
+    
+    
+    .pin {
+        position: absolute;
+        top: 13rem;
+        right: 8rem;
+        opacity: 60%;
+        width: 5rem;
+        height: 1.5rem;
+        padding: 0.2rem;
+        border: 1px solid $color-taupe;
+        border-radius: 5px;
     }
 }

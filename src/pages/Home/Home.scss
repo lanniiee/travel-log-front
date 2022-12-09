@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
+    width: 100vw;
     &__heading {
         display: flex;
         flex-direction: column;
@@ -46,4 +47,54 @@
     position: relative;
     right: -18rem;
     bottom: 17vh;
+}
+
+@media screen and (min-width: 380px) and (max-width: 1000px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 1rem;
+        width: 105vw;
+        &__heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            &--title {
+                font-family: $font-ubuntu;
+                font-size: 2rem;
+                color: $color-dark-grey;
+            }
+            &--subheading {
+                font-family: $font-allison;
+                font-size: 1.2rem;
+                color: rgb(24, 24, 24);
+            }
+        }
+        &__divider {
+            &--top {
+                width: 65vw;
+                height: 2px;
+                background-color: $color-light-beige;
+                border: none;
+            }
+            &--bottom {
+                width: 80vw;
+                height: 2px;
+                background-color: $color-light-beige;
+                border: none;
+            }
+    
+        }
+    }
+    
+    .gif {
+        width: 4rem;
+        position: relative;
+        right: -10rem;
+        bottom: 10vh;
+    }
 }
