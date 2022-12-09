@@ -36,4 +36,5 @@ More informatiuon can be found on:
 
 https://github.com/lanniiee/travel-guide-backend
 
-
+NOTE:
+For all alerts, I am planning to change to so that the message appears in the modal or something similar
