@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+<b>Travel Guide</b>
+<i>Intro:</i>
+This is a fullstack project that was completed within a week. 
+The webpage fetches API which contains information on the following:
+- Id for each reviews
+- Name of the reviewer
+- Location
+- Image of Location
+- Cost of Travel
+- Places to Visit
+- Date travelled from and to
+- Date created on
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<i>Features</i>
+Home page destination changes everytime the page load. 
+This webpage allows users to read other people's reviews on their travel and upload their own reviews. 
+Users are given the choice to update reviews, and to be able to delete reviews when entering the correct pin.
+When user is on the destinations page, they can see all the reviews. Once they click on a review, it will take them to a page with more information about that reviews, which includes comments. This also gives the user the ability to be able to update or delete the review. 
+As mentioned above, the user can only delete the review if they enter the correct pin. 
+The update button will navigate the user to the update page.  
 
-## Available Scripts
+<i>Front-end:</i>
+This project's front-end was built by using Javascript, SASS, HTML, and React. 
+React (flexible JS library) was used in this project to ensure that the user can render the page depending on what is being clicked. It also allows the Nav to stay on every page and have components that can be reuseable. React is also used for any functionality suchas if statements and fetching API. 
+SASS is used to style the page accordingly with variables for font and color being reused so that any future changes can be implemented efficiently and effectively.
 
-In the project directory, you can run:
+<i>Back-end:</i>
+This project's back-end was built using Java, SpringBoot and SQL.
+The API that is being fetched in the front-end is built using all mentioned above. 
+More informatiuon can be found on:
 
-### `npm start`
+https://github.com/lanniiee/travel-guide-backend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
