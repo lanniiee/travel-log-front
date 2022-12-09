@@ -3,7 +3,7 @@
 
 
 .destination {
-    width: 115vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,7 +91,7 @@
 .delete {
         position: absolute;
         top: 9rem;
-        right: -1rem;
+        right: 1rem;
         opacity: 60%;
         width: 5rem;
     }
@@ -100,7 +100,7 @@
 .pin {
     position: absolute;
     top: 9.5rem;
-    right: 4.5rem;
+    right: 6rem;
     opacity: 60%;
     width: 5rem;
     height: 1.5rem;
